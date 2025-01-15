@@ -1,6 +1,6 @@
-import React from 'react'
-import Layout from '../components/Layout'
-import { Send } from 'lucide-react'
+import React from "react";
+import Layout from "../components/Layout";
+import { Send } from "lucide-react";
 
 export default function Chatbot() {
   return (
@@ -11,17 +11,26 @@ export default function Chatbot() {
           <div className="flex-1 p-4 overflow-y-auto">
             <div className="mb-4">
               <div className="bg-green-100 rounded-lg p-3 inline-block">
-                <p className="text-green-800">Hello! How can I assist you with your farming needs today?</p>
+                <p className="text-green-800">
+                  Hello! How can I assist you with your farming needs today?
+                </p>
               </div>
             </div>
             <div className="mb-4 text-right">
               <div className="bg-green-500 text-white rounded-lg p-3 inline-block">
-                <p>I'm having issues with my tomato plants. They have yellow leaves.</p>
+                <p>
+                  I&apos;m having issues with my tomato plants. They have yellow
+                  leaves.
+                </p>
               </div>
             </div>
             <div className="mb-4">
               <div className="bg-green-100 rounded-lg p-3 inline-block">
-                <p className="text-green-800">Yellow leaves on tomato plants could be a sign of nutrient deficiency or overwatering. Let's troubleshoot this issue...</p>
+                <p className="text-green-800">
+                  Yellow leaves on tomato plants could be a sign of nutrient
+                  deficiency or overwatering. Let&apos;s troubleshoot this
+                  issue...
+                </p>
               </div>
             </div>
           </div>
@@ -40,6 +49,5 @@ export default function Chatbot() {
         </div>
       </div>
     </Layout>
-  )
+  );
 }
-

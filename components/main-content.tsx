@@ -1,8 +1,9 @@
-'use client'
+/* eslint-disable @typescript-eslint/no-unused-vars */
+"use client";
 
-import React from 'react'
-import { useRouter } from 'next/navigation'
-import { Search, Bell, LogOut } from 'lucide-react'
+import React from "react";
+import { useRouter } from "next/navigation";
+import { Search, Bell, LogOut } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -10,12 +11,12 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Button } from "@/components/ui/button"
+} from "@/components/ui/dropdown-menu";
+import { Button } from "@/components/ui/button";
 
 export function MainContent({ children }: { children: React.ReactNode }) {
-  const router = useRouter()
-  const [showNotifications, setShowNotifications] = React.useState(false)
+  const router = useRouter();
+  const [showNotifications, setShowNotifications] = React.useState(false);
 
   return (
     <main className="flex-1 p-4 md:p-8">
@@ -34,7 +35,11 @@ export function MainContent({ children }: { children: React.ReactNode }) {
         <div className="flex items-center gap-4">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="outline" size="icon" className="rounded-xl backdrop-blur-xl bg-white/70 border-green-100 hover:bg-white/80">
+              <Button
+                variant="outline"
+                size="icon"
+                className="rounded-xl backdrop-blur-xl bg-white/70 border-green-100 hover:bg-white/80"
+              >
                 <Bell size={20} className="text-gray-600" />
               </Button>
             </DropdownMenuTrigger>
@@ -44,7 +49,7 @@ export function MainContent({ children }: { children: React.ReactNode }) {
               <DropdownMenuItem>New message from Sarah</DropdownMenuItem>
               <DropdownMenuItem>Your crop analysis is ready</DropdownMenuItem>
               <DropdownMenuSeparator />
-              <DropdownMenuItem onClick={() => router.push('/notifications')}>
+              <DropdownMenuItem onClick={() => router.push("/notifications")}>
                 View all notifications
               </DropdownMenuItem>
             </DropdownMenuContent>
@@ -64,6 +69,5 @@ export function MainContent({ children }: { children: React.ReactNode }) {
       </header>
       {children}
     </main>
-  )
+  );
 }
-

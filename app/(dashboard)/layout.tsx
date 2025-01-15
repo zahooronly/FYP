@@ -1,10 +1,10 @@
-import { Sidebar } from '@/components/sidebar'
-import { Header } from '@/components/header'
+import { Header } from "@/components/Header";
+import { Sidebar } from "@/components/sidebar";
 
 export default function DashboardLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <div className="flex min-h-screen">
@@ -16,6 +16,5 @@ export default function DashboardLayout({
         </div>
       </main>
     </div>
-  )
+  );
 }
-

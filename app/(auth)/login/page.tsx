@@ -1,13 +1,19 @@
-import { Metadata } from 'next'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import { Metadata } from "next";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: 'Login - CropChain',
-  description: 'Login to your CropChain account',
-}
+  title: "Login - CropChain",
+  description: "Login to your CropChain account",
+};
 
 export default function LoginPage() {
   return (
@@ -19,7 +25,9 @@ export default function LoginPage() {
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-green-400 to-green-500 flex items-center justify-center">
                 <span className="text-white font-semibold">C</span>
               </div>
-              <h2 className="text-2xl font-semibold text-green-800">CropChain</h2>
+              <h2 className="text-2xl font-semibold text-green-800">
+                CropChain
+              </h2>
             </div>
             <CardDescription>
               Enter your email and password to login to your account
@@ -48,7 +56,7 @@ export default function LoginPage() {
               Login
             </Button>
             <div className="text-sm text-gray-600 text-center">
-              Don't have an account?{' '}
+              Don&apos;t have an account?{" "}
               <Link href="/register" className="text-green-600 hover:underline">
                 Register
               </Link>
@@ -57,6 +65,5 @@ export default function LoginPage() {
         </Card>
       </div>
     </div>
-  )
+  );
 }
-
